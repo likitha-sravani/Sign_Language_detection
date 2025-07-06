@@ -17,43 +17,6 @@ A desktop application for real-time sign language detection using webcam input. 
 pip install -r requirements.txt
 ```
 
-### 2. Dataset Setup
-
-1. Download the ASL Alphabet Dataset from Kaggle: https://www.kaggle.com/datasets/grassknoted/asl-alphabet
-2. Extract the dataset to the `data/` folder
-3. The structure should look like:
-   ```
-   data/
-   ├── asl_alphabet_train/
-   │   ├── A/
-   │   ├── B/
-   │   ├── ...
-   │   └── Z/
-   └── asl_alphabet_test/
-       ├── A/
-       ├── B/
-       ├── ...
-       └── Z/
-   ```
-
-### 3. Project Structure
-
-```
-Sign_Language_detection/
-│
-├── data/                    # Dataset directory
-├── models/                  # Saved trained models
-├── src/                     # Source code
-│   ├── train.py            # Model training script
-│   ├── detect.py           # Webcam detection script
-│   ├── gui.py              # Desktop app GUI
-│   └── utils.py            # Utility functions
-├── requirements.txt
-└── README.md
-```
-
-## Usage
-
 ### Training the Model
 
 ```bash
@@ -71,19 +34,18 @@ python src/gui.py
 ```bash
 python src/detect.py
 ```
-
-## Model Architecture
-
-- CNN-based image classification model
-- Input: 64x64x3 RGB images
-- Output: 29 classes (A-Z, space, delete, nothing)
-
 ## Requirements
 
 - Python 3.8+
 - Webcam
 - GPU (optional, for faster training)
 
-## License
+## Output
 
-This project is for educational purposes. 
+![WhatsApp Image 2025-07-05 at 22 21 21_5806a1c3](https://github.com/user-attachments/assets/7a2a5fae-67a6-40bc-92ca-310bde42b769)
+
+
+![WhatsApp Image 2025-07-05 at 23 32 03_728586ad](https://github.com/user-attachments/assets/ee71925c-d682-4120-935c-86d06d438787)
+
+
+![WhatsApp Image 2025-07-05 at 23 35 07_13f036b6](https://github.com/user-attachments/assets/78d461e9-6f7b-42fd-925b-f1236f6a7196)
